@@ -1,0 +1,93 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Feed",
+  "description": "Schema of feed",
+  "type": "object",
+  "properties": {
+    "userId": {
+      "type": "number",
+      "minimum": 1
+    },
+    "platform": {
+      "enum": [
+        "APP_WINPHONE",
+        "APP_ANDROID",
+        "APP_IOS",
+        "DESKTOP_WEB",
+        "MOBILE_WEB"
+      ]
+    },
+    "durationMs": {
+      "description": "время в течение которого пользователь видел фид\n",
+      "type": "number",
+      "minimum": 1
+    },
+    "position": {
+      "description": "позиция в ленте на которой был показан фид",
+      "type": "number",
+      "minimum": 1
+
+    },
+    "timestamp": {
+      "type": "number",
+      "minimum": 1
+    },
+    "owners": {
+      "description": "создатели контента в фиде",
+      "type": "object",
+      "properties": {
+        "user": {
+          "type": "array",
+          "items": {
+            "type": "number",
+            "minimum": 1
+          }
+        },
+        "group": {
+          "type": "array",
+          "items": {
+            "type": "number",
+            "minimum": 1
+          }
+        }
+      }
+    },
+    "resources": {
+      "GROUP_PHOTO": {
+        "type": "array",
+        "items": {
+          "type": "number",
+          "minimum": 1
+        }
+      },
+      "MOVIE": {
+        "type": "array",
+        "items": {
+          "type": "number",
+          "minimum": 1
+        }
+      },
+      "POST": {
+        "type": "array",
+        "items": {
+          "type": "number",
+          "minimum": 1
+        }
+      },
+      "USER_PHOTO": {
+        "type": "array",
+        "items": {
+          "type": "number",
+          "minimum": 1
+        }
+      }
+    }
+  },
+  "required": [
+    "userId",
+    "platform",
+    "timestamp",
+    "owners",
+    "resources"
+  ]
+}
