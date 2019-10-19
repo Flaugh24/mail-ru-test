@@ -13,6 +13,8 @@ https://github.com/Flaugh24/mail-ru-test/blob/master/src/main/resources/schema.s
 4) UserId - String вместо Long
 5) Отрацательный Timestamp
 
+https://github.com/Flaugh24/mail-ru-test/blob/master/src/test/java/ru/mail/feeds/JSONValidatorTest.java
+
 ## Задания
 1) Сделал на SQL, так как это показалось проще - https://github.com/Flaugh24/mail-ru-test/blob/master/src/main/resources/schema.sql
 2) В процессе
