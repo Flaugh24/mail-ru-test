@@ -89,5 +89,6 @@
     "timestamp",
     "owners",
     "resources"
-  ]
+  ],
+  "additionalProperties": false
 }
