@@ -52,7 +52,7 @@ public class StatisticBySessions {
                             long currentPosition = currentFeed.getPosition();
                             // Если просмотренные посты пользователям идут друг за другом без разрывов, значит это было сделано в рамках одной сессии
                             // Пока условие выполняется, ведем подсчет длительности просмотра постов и колиество просмотренных постов
-                            // Если произошел разрыв, то добавляем текущие счетчики в коллекции
+                            // Если произошел разрыв, то создаем объект сесси и добавляем ее в коллекцию
                             if (currentPosition - prevPosition == 1) {
                                 durationCurrentSession = durationCurrentSession + currentFeed.getDurationMs();
                                 prevPosition = currentFeed.getPosition();
@@ -64,6 +64,8 @@ public class StatisticBySessions {
                                 currentCountFeedsViewed = 1;
                             }
                         }
+
+                        sessions.add(new Session(currentCountFeedsViewed, durationCurrentSession));
 
                         return sessions.iterator();
                     }
