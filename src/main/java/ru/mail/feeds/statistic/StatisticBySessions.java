@@ -60,6 +60,7 @@ public class StatisticBySessions {
                             } else {
                                 sessions.add(new Session(currentCountFeedsViewed, durationCurrentSession));
                                 durationCurrentSession = currentFeed.getDurationMs();
+                                prevPosition = currentFeed.getPosition();
                                 currentCountFeedsViewed = 1;
                             }
                         }
