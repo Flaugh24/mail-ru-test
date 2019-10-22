@@ -14,7 +14,7 @@ create table feed
 
 
 -- Количество показов и уникальных пользователей за день в разрезе по платформам, в том числе по всем платформам суммарно;
-explain
+
 with statistic_by_platform as (
     select platform,
            count(1)                as count_shows,
