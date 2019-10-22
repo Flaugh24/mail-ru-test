@@ -18,7 +18,7 @@ https://github.com/Flaugh24/mail-ru-test/blob/master/src/test/java/ru/mail/feeds
 ## Задания
 1) Взял за основу то, что одного и того же пользователя на разных платформах считаем за разных пользователей
 Сделал на SQL, так как это показалось проще - https://github.com/Flaugh24/mail-ru-test/blob/master/src/main/resources/schema.sql
-2) https://github.com/Flaugh24/mail-ru-test/blob/master/src/main/java/ru/mail/feeds/statistic/UniqueAuthorsAndContents.java
+2) https://github.com/Flaugh24/mail-ru-test/blob/master/src/main/java/ru/mail/feeds/statistic/StatisticByAuthorsAndSources.java
 3) Сессию определил как просмотренные подряд посты пользователям. 
 Т.е если у нас есть информация, что пользователь просмотрел посты 1-5 - это одна сессия, 
 потом пользователь вышел, лента обновилась, и он просмотрел 10-20 - другая сессия
