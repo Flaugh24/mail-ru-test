@@ -30,8 +30,3 @@ https://github.com/Flaugh24/mail-ru-test/blob/master/src/main/java/ru/mail/feeds
 4) Переложил список юзеров в HashMap, в итоге фильтрация стала за O(1). 
 
 https://github.com/Flaugh24/mail-ru-test/blob/master/src/main/java/ru/mail/feeds/statistic/StatisticByUesrs.java
-
-## Как улучшить
-Думаю, что если авторов и контент сделать не структурой, а просто списками из объектов, 
-которые будут содержать в себе тип объекта и айдишник, то должно стать проще работать. 
-Например, для второго задания можно будет написать SQL и не бояться повторных чтений таблицы
